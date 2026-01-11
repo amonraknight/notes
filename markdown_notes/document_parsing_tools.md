@@ -40,3 +40,15 @@ Provides ORC engine options.
 
 Chuncking abilities simplifying RAG.
 
+4. [AWS Textract](https://ap-northeast-2.console.aws.amazon.com/textract/home?refid=924a57b7-e471-4fb8-a874-cc5547ee2932&region=ap-northeast-2#/)
+
+Textract is able to find key-values and tables out of docs.
+
+To try it locally, please refer to [this](https://docs.aws.amazon.com/textract/latest/dg/program-access.html).
+
+Refer to [this page](https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-text.html) about how to analyze a document.
+
+### Accesses: 
+You can use the AmazonTextractFullAccess managed policy to get complete access to the Amazon Textract API.
+
+The analysis output out of [its input](resources/mineru_input_sample_1.pdf) is [here](resources/textract_output_sample_1.json).
