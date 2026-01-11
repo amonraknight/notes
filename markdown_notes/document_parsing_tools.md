@@ -51,4 +51,11 @@ Refer to [this page](https://docs.aws.amazon.com/textract/latest/dg/analyzing-do
 ### Accesses: 
 You can use the AmazonTextractFullAccess managed policy to get complete access to the Amazon Textract API.
 
-The analysis output out of [its input](resources/mineru_input_sample_1.pdf) is [here](resources/textract_output_sample_1.json).
+
+1st [output sample in JSON](resources/textract_output_sample_1.json) and [its input](resources/mineru_input_sample_1.pdf).
+
+AWS Textract is not good at parsing Chinese.
+
+2nd [output sample in JSON](resources/textract_output_sample_2.json) and [its input](resources/textract_input_sample_2.pdf).
+ 
+
