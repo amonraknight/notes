@@ -59,3 +59,15 @@ AWS Textract is not good at parsing Chinese.
 2nd [output sample in JSON](resources/textract_output_sample_2.json) and [its input](resources/textract_input_sample_2.pdf).
  
 
+5. [LangExtract](https://langextract.com/zh-hans)
+
+Open-source unstructured text documents parser. Based on Gemini, requires an API key. Act as a Python lib.
+
+Needs a prompt and an example.
+
+But this is not for parsing images or PDFs.
+
+Doesn't natively support Chinese.
+
+Allow [customized provider](https://github.com/google/langextract/blob/main/langextract/providers/README.md#creating-a-new-provider).
+
