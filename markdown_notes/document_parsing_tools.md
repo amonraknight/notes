@@ -12,6 +12,12 @@ Able to merge across-page tables.
 
 2nd [output sample in JSON](resources/mineru_output_sample_2.JSON) and [its input](resources/mineru_input_sample_2.pdf).
 
+More samples:
+- [output](resources/MinerU_invoice_sample_1_Contractor Customer Invoice.json) / [input](resources/invoice_sample_1_Contractor Customer Invoice.pdf)
+- [output](resources/MinerU_invoice_sample_2 Contractor Invoice.json) / [input](resources/invoice_sample_2 Contractor Invoice.pdf)
+- [output](resources/MinerU_invoice_sample_3 Project Customer Invoice.json) / [input](resources/invoice_sample_3 Project Customer Invoice.pdf)
+- [output](resources/MinerU_cross_page_table_sample_1.json) / [input](resources/cross_page_table_sample_1.pdf)
+
 2. [Unstract](https://unstract.com/)
 
 Adapt to multiple input file types and output foramts(JSON, table, text). Provide workflow and API. 
@@ -51,13 +57,22 @@ Refer to [this page](https://docs.aws.amazon.com/textract/latest/dg/analyzing-do
 ### Accesses: 
 You can use the AmazonTextractFullAccess managed policy to get complete access to the Amazon Textract API.
 
+There are 2 main parse types, FORM and TABLES. In type FORM Textract is going to extract content to key-value sets. TABLES mode finds tables with header, footer and cells.
+
 
 1st [output sample in JSON](resources/textract_output_sample_1.json) and [its input](resources/mineru_input_sample_1.pdf).
 
 AWS Textract is not good at parsing Chinese.
 
 2nd [output sample in JSON](resources/textract_output_sample_2.json) and [its input](resources/textract_input_sample_2.pdf).
- 
+
+More samples:
+- [output](resources/textract_invoice_sample_1_Contractor Customer Invoice.json) / [input](resources/invoice_sample_1_Contractor Customer Invoice.pdf)
+- [output](resources/textract_invoice_sample_2 Contractor Invoice.json) / [input](resources/invoice_sample_2 Contractor Invoice.pdf)
+- [output](resources/) / [input](resources/invoice_sample_3 Project Customer Invoice.pdf)
+- [output](resources/) / [input](resources/cross_page_table_sample_1.pdf)
+
+
 
 5. [LangExtract](https://langextract.com/zh-hans)
 
