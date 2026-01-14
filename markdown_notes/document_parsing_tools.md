@@ -1,4 +1,4 @@
-This is a collection of document parsing tools.
+# Tools can be useful.
 
 1. [MinerU](https://mineru.net/)
 
@@ -29,6 +29,9 @@ The open-source version doesn't have some LLM-based functions, including review 
 Sign up to try for free.
 
 The locating of contents is on the basis of LLM and prompts.
+
+Source code [here](https://github.com/Zipstack/unstract).
+
 
 3. [Docling](https://docling-project.github.io/docling/)
 
@@ -69,8 +72,6 @@ AWS Textract is not good at parsing Chinese.
 More samples:
 - [output](resources/textract_invoice_sample_1_Contractor Customer Invoice.json) / [input](resources/invoice_sample_1_Contractor Customer Invoice.pdf)
 - [output](resources/textract_invoice_sample_2 Contractor Invoice.json) / [input](resources/invoice_sample_2 Contractor Invoice.pdf)
-- [output](resources/) / [input](resources/invoice_sample_3 Project Customer Invoice.pdf)
-- [output](resources/) / [input](resources/cross_page_table_sample_1.pdf)
 
 
 
@@ -85,4 +86,19 @@ But this is not for parsing images or PDFs.
 Doesn't natively support Chinese.
 
 Allow [customized provider](https://github.com/google/langextract/blob/main/langextract/providers/README.md#creating-a-new-provider).
+
+6. [MarkItDown](https://github.com/microsoft/markitdown)
+
+Now in usage. Not able to keep the table structure.
+
+7. [gptpdf](https://github.com/CosmosShadow/gptpdf)
+
+Use GPT to parse PDF.
+
+# Ideas
+
+1. Embody a parse result in JSON into a tree. The user should be able to browse the tree and choose where his target lies. A user should always select a leave note (table body, text and others).
+Use [primeng](https://primeng.org/tree) to represent tree strcture.
+
+
 
