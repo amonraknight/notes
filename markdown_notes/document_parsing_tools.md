@@ -56,9 +56,18 @@ Textract is able to find key-values and tables out of docs.
 To try it locally, please refer to [this](https://docs.aws.amazon.com/textract/latest/dg/program-access.html).
 
 Refer to [this page](https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-text.html) about how to analyze a document.
+To parse a file having multiple pages, refer to [another page](https://docs.aws.amazon.com/textract/latest/dg/async-analyzing-with-sqs.html).
 
-### Accesses: 
-You can use the AmazonTextractFullAccess managed policy to get complete access to the Amazon Textract API.
+
+The precondition of using asynchronized document analysis includes:
+    - minimum roles: AmazonTextractFullAccess, AmazonS3ReadOnlyAccess, AmazonSNSFullAccess, AmazonSQSFullAccess
+    - User role has permission to pass IAM roles to Amazon Textract.
+    - has a bucket, upload target PDF file in S3 bucket
+    - an Amazon SNS topic
+    - an Amazon SQS queue
+    - Give the topic permission to send messages to the queue.
+    - Giving Amazon Textract Access to Your Amazon SNS Topic. Create a role for Textract and assign it with the roles to visit S3, SNS and SQS.
+
 
 There are 2 main parse types, FORM and TABLES. In type FORM Textract is going to extract content to key-value sets. TABLES mode finds tables with header, footer and cells.
 
