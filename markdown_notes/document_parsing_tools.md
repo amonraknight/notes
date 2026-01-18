@@ -81,7 +81,8 @@ AWS Textract is not good at parsing Chinese.
 More samples:
 - [output](resources/textract_invoice_sample_1_Contractor Customer Invoice.json) / [input](resources/invoice_sample_1_Contractor Customer Invoice.pdf)
 - [output](resources/textract_invoice_sample_2 Contractor Invoice.json) / [input](resources/invoice_sample_2 Contractor Invoice.pdf)
-
+- [output](resources/textract_output_sample_cross_page_table_sample_1.json) / [input](resources/cross_page_table_sample_1.pdf)
+- [output](resources/textract_output_sample_invoice_sample_3 Project Customer Invoice.json) / [input](resources/invoice_sample_3 Project Customer Invoice.pdf)
 
 
 5. [LangExtract](https://langextract.com/zh-hans)
