@@ -110,5 +110,26 @@ Use GPT to parse PDF.
 1. Embody a parse result in JSON into a tree. The user should be able to browse the tree and choose where his target lies. A user should always select a leave note (table body, text and others).
 Use [primeng](https://primeng.org/tree) to represent tree strcture.
 
+2. The Textract parse result of each page can also be transformed from a flat structure into a Json object of a cascading structure.
 
+page --> lines & tables
 
+table --> cells
+      --> table title
+      --> table footer
+
+The children of each cell in words should be concatenated and play as the text content of that cell.
+
+The lines sharing the same words with cells, table titles should be ignored.
+
+Concatenate all the children words of a table title as its text content.
+
+key of key-value set --> value of key-value set
+
+The children of the key in a set should be concatenated and play as the text content. The value node is likewise.
+
+There can be overlaps between key-value pairs and tables.
+
+Decide how many columns are there by 
+
+Textract didn't detect the 2nd half of the table on the 2nd page. MinerU detected it.
